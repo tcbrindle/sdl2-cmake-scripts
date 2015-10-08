@@ -13,6 +13,8 @@ from the SDL website.
 
 ##Usage
 
+###General
+
 In order to use these scripts, you first need to tell CMake where to find them, via
 the `CMAKE_MODULE_PATH` variable. For example, if you put them in a
 subdirectory called `cmake`, then in your root `CMakeLists.txt` add the line
@@ -39,6 +41,26 @@ target_link_libraries(target ${SDL2_LIBRARY}
 ```
 
 or whatever is appropriate for your project.
+
+###mingw32 / msys
+
+This section supplements ```Usage -> General``` section. You still are required
+to incorporate ```General``` configuration settings in you CMakeLists.txt.
+
+Because cmake binaries for windows aren't aware of *nix/win paths conversion,
+default paths FindSDL2 will look in won't do any good. For that you should set SDL2_PATH variable.
+For example:
+```cmake
+set(SDL2_PATH "D:\\apps\\SDL2\\i686-w64-mingw32")
+```
+
+```bash
+mkdir build
+cd build
+cmake .. -G"MSYS Makefiles"
+make
+```
+
 
 ##Licence
 
