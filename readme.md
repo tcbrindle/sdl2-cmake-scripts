@@ -8,8 +8,9 @@ time, I'm putting them up here in case anyone else finds them useful.
 
 I've tested them on Linux and Mac OS using the Makefile and XCode targets.
 On Linux, you'll need the SDL2 development packages installed from your distro
-package manager. On Mac OS you'll need to install the development frameworks
-from the SDL website.
+package manager. On Mac OS you can install the development frameworks
+from the SDL website or alternatively, if you use Homebrew you can run
+`brew install sdl2` to install the development packages.
 
 ##Usage
 
