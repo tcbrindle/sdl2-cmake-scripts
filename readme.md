@@ -28,7 +28,12 @@ where `project` is the name of your project. You can then use the packages
 themselves by adding
 
 ```cmake
+set(SDL2_STATIC OFF) # on to link it statically
+
 find_package(SDL2 REQUIRED)
+
+add_definitions(${SDL2_DEFINITIONS})
+
 find_package(SDL2_Image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
 
