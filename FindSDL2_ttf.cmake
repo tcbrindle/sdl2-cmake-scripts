@@ -1,23 +1,23 @@
-# Locate SDL_image library
+# Locate SDL_ttf library
 #
 # This module defines:
 #
 # ::
 #
-#   SDL_TTF_LIBRARIES, the name of the library to link against
-#   SDL_TTF_INCLUDE_DIRS, where to find the headers
-#   SDL_TTF_FOUND, if false, do not try to link against
-#   SDL_F_VERSION_STRING - human-readable string containing the version of SDL_ttf
+#   SDL2_TTF_LIBRARIES, the name of the library to link against
+#   SDL2_TTF_INCLUDE_DIRS, where to find the headers
+#   SDL2_TTF_FOUND, if false, do not try to link against
+#   SDL2_TTF_VERSION_STRING - human-readable string containing the version of SDL_ttf
 #
 #
 #
-# For backward compatiblity the following variables are also set:
+# For backward compatibility the following variables are also set:
 #
 # ::
 #
-#   SDLTTF_LIBRARY (same value as SDL_TTF_LIBRARIES)
-#   SDLTTF_INCLUDE_DIR (same value as SDL_TTF_INCLUDE_DIRS)
-#   SDLTTF_FOUND (same value as SDL_TTF_FOUND)
+#   SDLTTF_LIBRARY (same value as SDL2_TTF_LIBRARIES)
+#   SDLTTF_INCLUDE_DIR (same value as SDL2_TTF_INCLUDE_DIRS)
+#   SDLTTF_FOUND (same value as SDL2_TTF_FOUND)
 #
 #
 #
@@ -92,7 +92,7 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(SDL2_ttf
         REQUIRED_VARS SDL2_TTF_LIBRARIES SDL2_TTF_INCLUDE_DIRS
         VERSION_VAR SDL2_TTF_VERSION_STRING)
 
-# for backward compatiblity
-#set(SDLTTF_LIBRARY ${SDL_TTF_LIBRARIES})
-#set(SDLTTF_INCLUDE_DIR ${SDL_TTF_INCLUDE_DIRS})
-#set(SDLTTF_FOUND ${SDL_TTF_FOUND})
+# for backward compatibility
+set(SDLTTF_LIBRARY ${SDL2_TTF_LIBRARIES})
+set(SDLTTF_INCLUDE_DIR ${SDL2_TTF_INCLUDE_DIRS})
+set(SDLTTF_FOUND ${SDL2_TTF_FOUND})

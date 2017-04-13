@@ -4,20 +4,20 @@
 #
 # ::
 #
-#   SDL_IMAGE_LIBRARIES, the name of the library to link against
-#   SDL_IMAGE_INCLUDE_DIRS, where to find the headers
-#   SDL_IMAGE_FOUND, if false, do not try to link against
-#   SDL_IMAGE_VERSION_STRING - human-readable string containing the version of SDL_image
+#   SDL2_IMAGE_LIBRARIES, the name of the library to link against
+#   SDL2_IMAGE_INCLUDE_DIRS, where to find the headers
+#   SDL2_IMAGE_FOUND, if false, do not try to link against
+#   SDL2_IMAGE_VERSION_STRING - human-readable string containing the version of SDL_image
 #
 #
 #
-# For backward compatiblity the following variables are also set:
+# For backward compatibility the following variables are also set:
 #
 # ::
 #
-#   SDLIMAGE_LIBRARY (same value as SDL_IMAGE_LIBRARIES)
-#   SDLIMAGE_INCLUDE_DIR (same value as SDL_IMAGE_INCLUDE_DIRS)
-#   SDLIMAGE_FOUND (same value as SDL_IMAGE_FOUND)
+#   SDLIMAGE_LIBRARY (same value as SDL2_IMAGE_LIBRARIES)
+#   SDLIMAGE_INCLUDE_DIR (same value as SDL2_IMAGE_INCLUDE_DIRS)
+#   SDLIMAGE_FOUND (same value as SDL2_IMAGE_FOUND)
 #
 #
 #
@@ -92,9 +92,9 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(SDL2_image
         REQUIRED_VARS SDL2_IMAGE_LIBRARIES SDL2_IMAGE_INCLUDE_DIRS
         VERSION_VAR SDL2_IMAGE_VERSION_STRING)
 
-# for backward compatiblity
-#set(SDLIMAGE_LIBRARY ${SDL_IMAGE_LIBRARIES})
-#set(SDLIMAGE_INCLUDE_DIR ${SDL_IMAGE_INCLUDE_DIRS})
-#set(SDLIMAGE_FOUND ${SDL_IMAGE_FOUND})
+# for backward compatibility
+set(SDLIMAGE_LIBRARY ${SDL2_IMAGE_LIBRARIES})
+set(SDLIMAGE_INCLUDE_DIR ${SDL2_IMAGE_INCLUDE_DIRS})
+set(SDLIMAGE_FOUND ${SDL2_IMAGE_FOUND})
 
 mark_as_advanced(SDL2_IMAGE_LIBRARY SDL2_IMAGE_INCLUDE_DIR)
