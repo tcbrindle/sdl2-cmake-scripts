@@ -12,9 +12,9 @@ package manager. On Mac OS you can install the development frameworks
 from the SDL website or alternatively, if you use Homebrew you can run
 `brew install sdl2` to install the development packages.
 
-##Usage
+## Usage
 
-###General
+### General
 
 In order to use these scripts, you first need to tell CMake where to find them, via
 the `CMAKE_MODULE_PATH` variable. For example, if you put them in a
@@ -43,7 +43,7 @@ target_link_libraries(target ${SDL2_LIBRARY}
 
 or whatever is appropriate for your project.
 
-###mingw32 / msys
+### mingw32 / msys
 
 This section supplements ```Usage -> General``` section. You still are required
 to incorporate ```General``` configuration settings in you CMakeLists.txt.
@@ -63,14 +63,14 @@ make
 ```
 
 
-##Licence
+## Licence
 
 I am not the original author of these scripts. I found `FindSDL2.cmake`
 after some Googling, and hacked up the `image` and `ttf` scripts from the
 SDL1 versions that come with CMake. The original scripts, and my changes,
 are released under the two-clause BSD licence.
 
-##Bugs
+## Bugs
 
 These scripts are provided in the hope that you might find them useful. They
 work for me and hopefully they'll work for you too. If you fix any
