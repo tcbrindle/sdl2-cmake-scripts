@@ -1,4 +1,4 @@
-# Locate SDL_image library
+# Locate SDL_ttf library
 #
 # This module defines:
 #
