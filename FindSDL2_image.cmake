@@ -11,7 +11,7 @@
 #
 #
 #
-# For backward compatiblity the following variables are also set:
+# For backward compatibility the following variables are also set:
 #
 # ::
 #
@@ -92,9 +92,9 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(SDL2_image
         REQUIRED_VARS SDL2_IMAGE_LIBRARIES SDL2_IMAGE_INCLUDE_DIRS
         VERSION_VAR SDL2_IMAGE_VERSION_STRING)
 
-# for backward compatiblity
-#set(SDLIMAGE_LIBRARY ${SDL2_IMAGE_LIBRARIES})
-#set(SDLIMAGE_INCLUDE_DIR ${SDL2_IMAGE_INCLUDE_DIRS})
-#set(SDLIMAGE_FOUND ${SDL2_IMAGE_FOUND})
+# for backward compatibility
+set(SDLIMAGE_LIBRARY ${SDL2_IMAGE_LIBRARIES})
+set(SDLIMAGE_INCLUDE_DIR ${SDL2_IMAGE_INCLUDE_DIRS})
+set(SDLIMAGE_FOUND ${SDL2_IMAGE_FOUND})
 
 mark_as_advanced(SDL2_IMAGE_LIBRARY SDL2_IMAGE_INCLUDE_DIR)
