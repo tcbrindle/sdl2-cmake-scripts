@@ -1,6 +1,6 @@
 
-This repository contains CMake scripts for finding the `SDL2`, `SDL2_image` and
-`SDL2_ttf` libraries and headers.
+This repository contains CMake scripts for finding the `SDL2`, `SDL2_image`,
+`SDL2_ttf`, and `SDL2_net` libraries and headers.
 
 CMake itself comes with corresponding scripts for SDL 1.2, which hopefully in
 time will be updated for SDL2 and make this repo redundant. In the mean
@@ -31,13 +31,16 @@ themselves by adding
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
+find_package(SDL2_net REQUIRED)
 
 include_directories(${SDL2_INCLUDE_DIR}
                     ${SDL2_IMAGE_INCLUDE_DIR}
-                    ${SDL2_TTF_INCLUDE_DIR})
+                    ${SDL2_TTF_INCLUDE_DIR}
+                    ${SDL2_NET_INCLUDE_DIR})
 target_link_libraries(target ${SDL2_LIBRARY}
                              ${SDL2_IMAGE_LIBRARIES}
-                             ${SDL2_TTF_LIBRARIES})
+                             ${SDL2_TTF_LIBRARIES}
+                             ${SDL2_NET_LIBRARIES})
 
 ```
 
