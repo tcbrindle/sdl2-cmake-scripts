@@ -1,5 +1,5 @@
 
-This repository contains CMake scripts for finding the `SDL2`, `SDL2_image` and
+This repository contains CMake scripts for finding the `SDL2`, `SDL2_image`, `SDL2_mixer` and
 `SDL2_ttf` libraries and headers.
 
 CMake itself comes with corresponding scripts for SDL 1.2, which hopefully in
